@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<title>Country Coronavirus Timelines</title>
+</head>
+
+<body>
+<div class="container">
+	<h3>Country Coronavirus Timelines</h3>
+	<hr>
+		 <h3>Confirmed Name:</h3><h3 th:text="${countryInformation.CountryDetails.name}"/>
+		 <hr>
+		 <h3>Confirmed Timeline:</h3><h3 th:text="${countryInformation.CountryTimelines.countryConfirmed}"/>
+		 <hr>
+		 <h3>Deaths Timeline:</h3><h3 th:text="${countryInformation.CountryTimelines.countryDeaths}"/>
+		 <hr>
+		 <h3>Recovered Timeline:</h3><h3 th:text="${countryInformation.CountryTimelines.countryRecovered}"/>
+	 	 
+</div>
+</body>
+

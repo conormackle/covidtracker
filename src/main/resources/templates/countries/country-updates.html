@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<title>Country Coronavirus Updates</title>
+</head>
+
+<body>
+<div class="container">
+	<h3>Country Coronavirus Updates</h3>
+	<hr>
+		 <h3>Name:</h3><h3 th:text="${countryInformation.CountryDetails.name}"/>
+		 <hr>
+		 <h3>Population:</h3><h3 th:text="${countryInformation.CountryDetails.population}"/>
+		 <hr>
+		 <h3>Last updated:</h3><h3 th:text="${countryInformation.CountryDetails.lastUpdated}"/>
+		 <hr>
+		 <h3>Total Confirmed Cases:</h3><h3 th:text="${countryInformation.CountryLatest.confirmed}"/>
+		 <hr>
+		 <h3>Total Deaths:</h3><h3 th:text="${countryInformation.CountryLatest.deaths}"/>
+		 <hr>	
+		 <h3>Total Recovered:</h3><h3 th:text="${countryInformation.CountryLatest.recovered}"/>		 	 
+</div>
+</body>
+
